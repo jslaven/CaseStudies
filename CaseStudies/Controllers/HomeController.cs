@@ -15,7 +15,7 @@ namespace CaseStudies.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Doing web development.";
 
             return View();
         }
