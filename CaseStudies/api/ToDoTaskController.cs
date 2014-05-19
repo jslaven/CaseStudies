@@ -12,12 +12,12 @@ using CaseStudies.Models;
 
 namespace CaseStudies.api
 {
-    [Queryable]
     public class ToDoTaskController : ApiController
     {
         private ToDoContext db = new ToDoContext();
 
         // GET api/ToDoTask
+        [Queryable]
         public IQueryable<ToDoTask> GetTasks()
         {
             return db.Tasks;
