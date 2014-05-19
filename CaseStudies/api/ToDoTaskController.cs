@@ -23,11 +23,6 @@ namespace CaseStudies.api
             return db.Tasks;
         }
 
-        public IHttpActionResult GetOverdueTasks()
-        {
-            db.Tasks.Where(n => n.DueDate > DateTime.Now):
-        }
-
         // GET api/ToDoTask/5
         [ResponseType(typeof(ToDoTask))]
         public IHttpActionResult GetToDoTask(int id)
